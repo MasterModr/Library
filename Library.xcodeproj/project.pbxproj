@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		96096C791B7A9FD5001A5A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96096C7B1B7A9FD5001A5A49 /* Main.storyboard */; };
-		962DACD71B83B7BC00C6FBC4 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962DACD61B83B7BC00C6FBC4 /* Book.swift */; };
 		964F38641B8236C10011BF80 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F38631B8236C10011BF80 /* WebViewController.swift */; };
 		964F38661B839ED80011BF80 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F38651B839ED80011BF80 /* TableViewController.swift */; };
 		965B2E4C1B7A7FE1008A4DC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965B2E4B1B7A7FE1008A4DC9 /* AppDelegate.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		96096C7A1B7A9FD5001A5A49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		962DACD61B83B7BC00C6FBC4 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = ../Book.swift; sourceTree = "<group>"; };
 		964F38631B8236C10011BF80 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		964F38651B839ED80011BF80 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		965B2E481B7A7FE1008A4DC9 /* Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +64,6 @@
 		965B2E4A1B7A7FE1008A4DC9 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				962DACD61B83B7BC00C6FBC4 /* Book.swift */,
 				965B2E4B1B7A7FE1008A4DC9 /* AppDelegate.swift */,
 				965B2E4D1B7A7FE1008A4DC9 /* ViewController.swift */,
 				965B2E521B7A7FE1008A4DC9 /* Assets.xcassets */,
@@ -157,7 +154,6 @@
 				964F38641B8236C10011BF80 /* WebViewController.swift in Sources */,
 				964F38661B839ED80011BF80 /* TableViewController.swift in Sources */,
 				96FF731B1B865FD7001D22AD /* SwiftyJSON.swift in Sources */,
-				962DACD71B83B7BC00C6FBC4 /* Book.swift in Sources */,
 				96FF731D1B866053001D22AD /* RestApiManager.swift in Sources */,
 				965B2E4C1B7A7FE1008A4DC9 /* AppDelegate.swift in Sources */,
 				966CA1D81B8CD94800103506 /* DetailViewController.swift in Sources */,
