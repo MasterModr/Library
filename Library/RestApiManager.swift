@@ -37,13 +37,8 @@ class RestApiManager: NSObject {
                 path1 += newpath[index]
             }
         }
-            
-        
-        
         let request = NSMutableURLRequest(URL: NSURL(string: path1)!)
-        
         let session = NSURLSession.sharedSession()
-        
         let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
             let json:JSON = JSON(data: data!)
             onCompletion(json, error)

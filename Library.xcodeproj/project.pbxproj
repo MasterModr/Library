@@ -64,13 +64,13 @@
 		965B2E4A1B7A7FE1008A4DC9 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				966CA1D71B8CD94800103506 /* DetailViewController.swift */,
 				965B2E4B1B7A7FE1008A4DC9 /* AppDelegate.swift */,
 				965B2E4D1B7A7FE1008A4DC9 /* ViewController.swift */,
 				965B2E521B7A7FE1008A4DC9 /* Assets.xcassets */,
 				96096C7B1B7A9FD5001A5A49 /* Main.storyboard */,
 				965B2E541B7A7FE1008A4DC9 /* LaunchScreen.storyboard */,
 				965B2E571B7A7FE1008A4DC9 /* Info.plist */,
-				966CA1D71B8CD94800103506 /* DetailViewController.swift */,
 				96FF731C1B866053001D22AD /* RestApiManager.swift */,
 				964F38651B839ED80011BF80 /* TableViewController.swift */,
 				964F38631B8236C10011BF80 /* WebViewController.swift */,

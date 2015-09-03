@@ -55,22 +55,27 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let detail = segue.destinationViewController as? DetailViewController
+        detail?.setBookTitle("Title Not Found")
+        detail?.setBookAuthor("Author Not Found")
+        detail?.setImage(0)
+        detail?.setCallNo("N/A")
+        detail?.setLocatio("N/A")
         let bibid = dict[data[rowNumber]]
         print(dict[data[rowNumber]])
         let path = "getinfo?keyword=" + bibid!
         RestApiManager.sharedInstance.getNames(path, onCompletion: { json in
             let result = json["content"]
-            //print(result.rawString()!)
+            print(result.rawString()!)
             let results: [String] = (result.rawString()?.componentsSeparatedByString("\n"))!
             detail?.setBookTitle(results[0])
             detail?.setBookAuthor(results[1])
-            var index = Range(start: results[2].startIndex, end: advance(results[2].startIndex, 10))
-            var tempint = Int(results[2].substringWithRange(index))!
+            print(results[2])
+            let tempint = Int((results[2] as NSString).substringToIndex(10))!
             detail?.setImage(tempint)
             detail?.setCallNo(results[3])
             detail?.setLocatio(results[4])
             dispatch_async(dispatch_get_main_queue(),{
-                detail?.reloadInfo()
+                detail?.viewDidLoad()
             })
 
         

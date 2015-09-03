@@ -50,7 +50,6 @@ class DetailViewController: UIViewController {
         else{
             var data: [Int] = []
             var number1 = number + 9780000000000
-            print(number1)
             while(number1 != 0)
             {
                 
@@ -67,9 +66,8 @@ class DetailViewController: UIViewController {
                 number1 += data[counter] * place
                 place *= 10
             }
-            print(number1)
             self.isbn = (number1 as NSNumber).stringValue
-            reloadInfo()
+            viewDidLoad()
         }
     }
     
@@ -91,6 +89,7 @@ class DetailViewController: UIViewController {
     
     func reloadInfo(){
         if let url = NSURL(string: "http://covers.openlibrary.org/b/isbn/" + isbn + "-L.jpg?default=false") {
+            print(url)
             if let data = NSData(contentsOfURL: url)
             {
                 
